@@ -1,0 +1,430 @@
+
+<html>
+<head>
+ <title> Smell Fresh </title>
+ <meta name="viewport" content= "width =device-width, initial-scale =1">
+ <style type="text/css">
+*{
+  margin: 0;
+  padding: 0;
+}
+ .navbar{
+   width: 100%;
+   height: 80px;
+   background-color: black;padding-right: 15px;padding-left: 15px;
+}
+.navdiv{
+    display: flex; align-items: center; justify-content: space-between;
+}
+li{
+  list-style: none; display: inline-block;
+}
+li a{
+   color: blue; font-size: 18px; font-weight: bold; margin-right: 25px;
+}
+.logo{
+  margin-right: auto;
+  margin-left: 42em;
+  width: 50px;
+  position: absolute;
+  top: 4%
+  left: 80%;
+}
+#banner{
+   background: url('wall.JPG');
+   background-size: cover;
+   background-position: center;
+   height: 100vh;
+   position: relative;
+
+}
+.banner-text{
+  text-align: center;
+  color: black;
+  padding-top: 180px;
+}
+.banner-text h1{
+ font-size: 80px;
+ color: black;
+
+}
+.banner-text p{
+ font-size: 20px;
+ font-style: italic;
+ color: white;
+ animation-name:slideinleft;
+ animation-duration:3s ;
+ animation-timing-function:ease-in;
+ animation-delay:1s;
+ animation-iteration-count:3s;
+ animation-direction:normal;
+ animation-fill-mode:both;
+
+ transform: translatex(-150px);
+}
+
+@keyframes slideinleft{
+ from{
+  transform: translatex(-300px)
+}
+
+ to{
+   transform: translatex(0)
+}
+}
+.banner-btn{
+ margin: 70px auto 0;
+ display: inline-block
+ border: 1px solid #fff;
+ padding: 12px 34px;
+ position: relative;
+ cursor: pointer;
+}
+.banner-btn a{
+   width: 150px;
+   text-decoration: none;
+   display: inline-block;
+   margin: 0 10px;
+   padding: 12px 0;
+   color: #fff;
+   border: .5px solid #fff;
+   position: relative;
+   z-index: 1;
+   transition: color 0.5s;
+}
+.banner-btn a span{
+   width: 0;
+   height: 100%;
+   position: absolute;
+   top: 0;
+   left: 0;
+   background: white;
+   z-index: -1;
+   transition: 0.5s;
+}
+.banner-btn a:hover span{
+  width: 100%;
+} 
+.banner-btn a:hover{
+  color: #000;
+  background: #f44336;
+  transition: 1s;
+}
+.button{
+	display: inline-block;
+	padding: 10px 20px;
+ 	font-size: 16px;
+	text-align: center;
+	border: none;
+	border-radius: 5px;
+	background-color:#3498db;
+ 	color: #ffffff
+	box-shadow: 0px 5px 0px #2980b9;
+	transition: transform 0.3s, box-shadow 0.3s;
+}
+.button:hover {
+   transform: translate(-5px);
+   box-shadow: 0px 0px 0px #2980b9;
+} 
+
+/*------PRODUCTS------*/
+
+.products{
+      width: 80%
+      margin: 100px auto 50px;
+      text-align: center;
+      padding-top: 100px;     
+}
+h1{
+  font-size: 38px;
+  font-weight: 600;
+}
+p{
+  color: blue;
+  font-size: 20px;
+  font-weight: 300;
+  line-height: 22px;
+  padding: 10px;
+}
+.row{
+  margin-top: 5%;
+  display: flex;
+  justify-content: space-between;
+}
+.Products-col{
+  flex-basis: 31%
+  background: #fff3f3;
+  border-radius: 10px;
+  margin-bottom: 5%;
+  padding: 20px 12px;
+  box-sizing: border-box;
+  transition: 0.5s;
+}
+h3{
+   text-align: center;
+   font-weight: 600;
+   margin: 10px 0;
+}
+.Products-col:hover{
+    box-shadow:0 0 20px rgba(0,0,0,0.2);
+}
+
+<!------Fragrances------> 
+
+.Fragrances{
+      width: 80%
+      margin: 100px auto 50px;
+      justify-content: center;
+      padding-top: 100px;     
+}
+h1{
+  font-size: 38px;
+  font-weight: 600;
+}
+p{
+  color: blue;
+  font-size: 20px;
+  font-weight: 300;
+  line-height: 22px;
+  padding: 10px;
+}
+.fragrance-box{
+	width: 80%;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+	margin: auto;
+}
+.Sprays{
+	flex-basis: 38%;
+	text-align: center;
+	border-radius: 5px;
+	margin-bottom: 20px;
+	color:#fff;
+} 
+.Sprays-img{
+	width: 100%
+	border-radius: 7px;
+}
+
+.bubbles img{
+    width: 50px;
+    animation: bubble 7s linear infinite;
+    border-radius: 50%;
+    padding: 20px;
+}
+.bubbles{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    position: absolute;
+    bottom: -80px;
+}
+.bubbles img:nth-child(1){
+      animation-delay: 1s;
+      width: 20px;
+}
+.bubbles img:nth-child(2){
+      animation-delay: 1s;
+      width: 15px;
+}
+.bubbles img:nth-child(3){
+      animation-delay: 3s;
+      width: 20px;
+}
+.bubbles img:nth-child(4){
+      animation-delay: 4.5s;
+      width: 30px;
+}
+.bubbles img:nth-child(5){
+      animation-delay: 2s;
+}
+.bubbles img:nth-child(6){
+      animation-delay: 3s;
+}
+.bubbles img:nth-child(7){
+      animation-delay: 7s;
+      width: 10px;
+}
+.bubbles img:nth-child(8){
+      animation-delay: 10s;
+      width: 20px;
+}
+@keyframes bubble{
+    	0%{
+       transform: translateY(0);
+       opacity: 0;
+	}
+	50%{
+
+       opacity: 1;
+	}
+	70%{
+       
+       opacity: 1;
+	}
+	100%{
+       transform: translateY(-80vh);
+       opacity: 0;
+	
+}
+
+@media(max-width: 700px){
+.row{
+    flex-direction: column;
+ }
+}
+  media screen and(max-width: 700px){
+     .contacts h4{
+      font-size: 24px;
+      }
+}
+@media(max-width: 550px){
+  #rows: 6r;
+}
+.h1 {
+  display: flex;
+  flex-direction: column;
+}
+</style>
+</head>
+<body>
+<nav class ="navbar">
+     <div class="navbar">
+    <ul>
+      <li><a href="#">HOME</a></li>
+      <li><a href="#">PRODUCTS</a></li>
+      <li><a href="#">SERVICES</a></li>
+      <li><a href="#">CONTACTS</a></li>
+      <img src="logo.png" class="logo">
+</ul>
+</div>
+</nav>
+<section id="banner">
+   <div class="banner-text">
+        <h1>Fragrance studio</h1>
+        <p>Flex your scent</p>
+        <div class="banner-btn">
+        <a href="#"><span><span>Explore</a>
+        <a href="#"><span><span>Read</a>
+    </div>
+</div>
+</section>
+
+<!------PRODUCTS------> 
+
+<section class="PRODUCTS">
+  <h1>Products</h1>
+  <p>Designer perfumes</p>
+<div class="row">
+  <div class="Products-col">
+     <h3>Polo sport</h3>
+     <img src="polo sport.jpg">
+     <p> 100ml oil perfume at 6000/= </p>
+  </div>
+<div class="Products-col">
+     <h3>One million</h3>
+      <img src="one million.jpg">
+     <p> 100ml oil perfume at 5500/= </p>
+  </div>
+<div class="Products-col">
+     <h3>James bond</h3>
+      <img src="aventus creed.jpg">
+     <p> 100ml oil perfume at 8000/= </p>
+  </div>
+<div class="Products-col">
+     <h3>Victoria secret</h3>
+      <img src="victoria secret.jpg">
+     <p> 100ml oil perfume at 6000/= </p>
+  </div>
+<div class="Products-col">
+     <h3>Black opium</h3>
+     <img src="black opium.jpg">
+     <p> 100ml oil perfume at 6000/= </p>
+</div>
+</section>
+
+<!------Fragrances------> 
+
+<section id="Fragrances">
+	<div class="title-text">
+	<h1>Fragrances</h1>  
+	<p>Body sprays</p>  
+</div>
+<div class="fragrance-box">
+	<div class="Sprays">
+	<img src="b1.JPG">
+	<p> Body philosophy at 600/= </p>
+	</div>
+	<div class="Sprays">
+	<img src="b2.JPG">
+	<p> Body philosophy at 600/= </p>
+	</div>
+	<div class="Sprays">
+        <img src="b3.JPG">
+	<p> Body philosophy at 600/= </p>
+	</div>
+	<div class="Sprays">
+      	<img src="f4.JPG">
+	<p> 15ml smart collection at 230/= </p>
+	</div>
+	<div class="Sprays">
+	<img src="f2.JPG">
+	<p> 236ml dear body at 450/= </p>
+	</div>
+	<div class="Sprays">
+	<img src="f3.JPG">
+	<p> 236ml body splash at 450/= </p>
+	</div>
+	<div class="Sprays">
+	<img src="f5.JPG">
+	<p> 50ml pure musk at 500/= </p>
+	</div>
+	<div class="Sprays">
+	<img src="f6.JPG">
+	<p> 50ml brown orchid at 500/= </p>
+	</div>
+	<div class="Sprays">
+	<img src="f7.JPG">
+	<p> 30ml custom oil fragrance at 1050/= </p>
+	</div>
+	<div class="Sprays">
+	<img src="f8.JPG">
+	<p> 50ml crown perfume at 450/= </p>
+	</div>
+	<div class="Sprays">
+	<img src="f9.JPG">
+	<p> 10ml custom oil fragrance at 480/= </p>
+	</div>
+	<div class="Sprays">
+	<img src="f10.JPG">
+	<p> 30ml custom oil fragrance at 1050/= </p>
+	</div>
+	<div class="Sprays">
+	<img src="f11.JPG">
+	<p> Refill bottle at 150/= </p>
+	</div>
+	<div class="Sprays">
+	<img src="f12.JPG">
+	<p> 30ml custom oil fragrance at 1050/= </p>
+	</div>
+	<div class="Sprays">
+	<img src="f13.JPG">
+	<p> 25ml Rexona at 200/= </p>
+	</div>
+</div>
+</section>
+<div class="bubbles">
+     <img src="b.JPG">
+     <img src="b.JPG">
+     <img src="b.JPG">
+     <img src="b.JPG">
+     <img src="b.JPG">
+     <img src="b.JPG">
+     <img src="b.JPG">
+     <img src="b.JPG">
+</div>
+</div>
+</body>
+</html>
